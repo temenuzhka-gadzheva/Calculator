@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Globalization;
 using System.Windows.Forms;
 
 namespace Calculator
@@ -58,7 +59,7 @@ namespace Calculator
         {
             Button button = (Button)sender;
             operation = button.Text;
-            value = Double.Parse(result.Text);
+            value = Double.Parse(result.Text, CultureInfo.InvariantCulture);
             result.Text = "";
             equation.Text = System.Convert.ToString(value) + " " + operation;
             processed = true;
@@ -74,19 +75,19 @@ namespace Calculator
             switch (operation)
             {
                 case "*":
-                    result.Text = (value * Double.Parse(result.Text)).ToString();
+                    result.Text = (value * Double.Parse(result.Text,CultureInfo.InvariantCulture)).ToString();
                     break;
                 case "/":
-                    result.Text = (value / Double.Parse(result.Text)).ToString();
+                    result.Text = (value / Double.Parse(result.Text, CultureInfo.InvariantCulture)).ToString();
                     break;
                 case "+":
-                    result.Text = (value + Double.Parse(result.Text)).ToString();
+                    result.Text = (value + Double.Parse(result.Text, CultureInfo.InvariantCulture)).ToString();
                     break;
                 case "-":
-                    result.Text = (value - Double.Parse(result.Text)).ToString();
+                    result.Text = (value - Double.Parse(result.Text, CultureInfo.InvariantCulture)).ToString();
                     break;
                 case "Mod":
-                    result.Text = (value % Double.Parse(result.Text)).ToString();
+                    result.Text = (value % Double.Parse(result.Text, CultureInfo.InvariantCulture)).ToString();
                     break;
                 case "Exp":
                     double i = Double.Parse(result.Text);
