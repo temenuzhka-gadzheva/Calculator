@@ -329,6 +329,7 @@ namespace Calculator
             this.equation.Size = new System.Drawing.Size(64, 25);
             this.equation.TabIndex = 19;
             this.equation.Text = "label1";
+            this.equation.Click += new System.EventHandler(this.equation_Click);
             // 
             // buttonMPlus
             // 

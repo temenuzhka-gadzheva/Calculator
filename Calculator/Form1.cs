@@ -75,13 +75,13 @@ namespace Calculator
             switch (operation)
             {
                 case "*":
-                    result.Text = (value * Double.Parse(result.Text,CultureInfo.InvariantCulture)).ToString();
+                    result.Text = (value * Double.Parse(result.Text ,CultureInfo.InvariantCulture)).ToString();
                     break;
                 case "/":
                     result.Text = (value / Double.Parse(result.Text, CultureInfo.InvariantCulture)).ToString();
                     break;
                 case "+":
-                    result.Text = (value + Double.Parse(result.Text, CultureInfo.InvariantCulture)).ToString();
+                    result.Text = (value + Double.Parse(result.Text ,CultureInfo.InvariantCulture)).ToString();
                     break;
                 case "-":
                     result.Text = (value - Double.Parse(result.Text, CultureInfo.InvariantCulture)).ToString();
@@ -94,8 +94,6 @@ namespace Calculator
                     double q;
                     q = (value);
                     result.Text = Math.Exp(i * Math.Log(q * 4)).ToString();
-                    break;
-                default:
                     break;
             }
 
@@ -396,6 +394,11 @@ namespace Calculator
         }
 
         private void listMultiply_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void equation_Click(object sender, EventArgs e)
         {
 
         }
