@@ -421,39 +421,40 @@ namespace Calculator
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "File";
+            this.fileToolStripMenuItem.Click += new System.EventHandler(this.fileToolStripMenuItem_Click);
             // 
             // standartToolStripMenuItem
             // 
             this.standartToolStripMenuItem.Name = "standartToolStripMenuItem";
-            this.standartToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
+            this.standartToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.standartToolStripMenuItem.Text = "Standard";
             this.standartToolStripMenuItem.Click += new System.EventHandler(this.standartToolStripMenuItem_Click);
             // 
             // scientificToolStripMenuItem
             // 
             this.scientificToolStripMenuItem.Name = "scientificToolStripMenuItem";
-            this.scientificToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
+            this.scientificToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.scientificToolStripMenuItem.Text = "Scientific";
             this.scientificToolStripMenuItem.Click += new System.EventHandler(this.scientificToolStripMenuItem_Click);
             // 
             // tempritureToolStripMenuItem
             // 
             this.tempritureToolStripMenuItem.Name = "tempritureToolStripMenuItem";
-            this.tempritureToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
+            this.tempritureToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.tempritureToolStripMenuItem.Text = "Temperature";
             this.tempritureToolStripMenuItem.Click += new System.EventHandler(this.tempritureToolStripMenuItem_Click);
             // 
             // multiplicationToolStripMenuItem
             // 
             this.multiplicationToolStripMenuItem.Name = "multiplicationToolStripMenuItem";
-            this.multiplicationToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
+            this.multiplicationToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.multiplicationToolStripMenuItem.Text = "Multiplication";
             this.multiplicationToolStripMenuItem.Click += new System.EventHandler(this.multiplicationToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
